@@ -10,7 +10,7 @@ const FirstPage = ({ val, setdynavalue, childpage }) => {
   console.log(val);
   return (
     <div>
-      <h1>Demo</h1>
+      <h1>FirstPage Demo</h1>
       <h2>{val}</h2>
       <button onClick={valuechange}>Click</button>
     </div>
