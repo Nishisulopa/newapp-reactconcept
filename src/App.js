@@ -18,8 +18,8 @@ function App() {
     // </Router>
     // <Usememoparent />
     <>
-      {/* <Navbar />
-      <FirstPage /> */}
+      {/* <Navbar /> */}
+      {/* <FirstPage /> */}
       <CardShow />
     </>
   );
