@@ -1,22 +1,44 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
 import { profiledata, profiledata2 } from "./profiledata";
+
 const CardShow = () => {
-  const data = profiledata.map((val) => val);
-  const data2 = profiledata2.map((val) => val);
+  const handleButtonClick = (action) => {
+    if (action === "alert1") {
+      alert("Button clicked!");
+    } else if (action === "navigate") {
+      alert("navigate to another page");
+    } else {
+      alert("Unknown action");
+    }
+  };
 
   return (
     <>
       <div>
-        <h1>Heading one</h1>
+        <h1>Heading One</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 m-10 gap-5 grid-cols-1">
-          <ProfileCard data={data} />
+          <ProfileCard
+            data={profiledata}
+            onButtonClick={(name) =>
+              name === "Madhusmita"
+                ? handleButtonClick("alert1")
+                : handleButtonClick("navigate")
+            }
+          />
         </div>
       </div>
       <div>
-        <h1>Heading two</h1>
+        <h1>Heading Two</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 m-10 gap-5 grid-cols-1">
-          <ProfileCard data={data2} />
+          <ProfileCard
+            data={profiledata2}
+            onButtonClick={(name) =>
+              name === "Mftffhfgyd"
+                ? handleButtonClick("alert1")
+                : handleButtonClick("navigate")
+            }
+          />
         </div>
       </div>
     </>

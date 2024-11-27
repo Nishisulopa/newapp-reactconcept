@@ -1,24 +1,28 @@
 import React from "react";
 
-const ProfileCard = ({ data }) => {
+const ProfileCard = ({ data, onButtonClick }) => {
   return (
     <>
-      {data.map((val, index) => {
-        return (
-          <>
-            <div
-              key={index}
-              className="h-full lg:w-full m-5 border-2 shadow-md flex flex-col justify-center items-center"
-            >
-              <div className="rounded-full h-14 w-14  bg-slate-500 flex justify-center m-5 items-center">
-                {val.logo}
-              </div>
-              <h1>{val.name}</h1>
-              <h3>Position:{val.position}</h3>
-            </div>
-          </>
-        );
-      })}
+      {data.map((val, index) => (
+        <div
+          key={index}
+          className="h-full lg:w-full m-5 border-2 shadow-md flex flex-col justify-center items-center"
+        >
+          <div className="rounded-full h-14 w-14 bg-slate-500 flex justify-center m-5 items-center">
+            {val.logo}
+          </div>
+          <h1>{val.name}</h1>
+          <h3>Position: {val.position}</h3>
+          <button
+            className="mt-4 p-2 bg-blue-500 text-white rounded"
+            onClick={() => onButtonClick(val.name)}
+          >
+            {val.name === "Madhusmita" || val.name === "Mftffhfgyd"
+              ? "Show Alert"
+              : "Go to Another Page"}
+          </button>
+        </div>
+      ))}
     </>
   );
 };
