@@ -15,11 +15,9 @@ const ProfileCard = ({ data, onButtonClick }) => {
           <h3>Position: {val.position}</h3>
           <button
             className="mt-4 p-2 bg-blue-500 text-white rounded"
-            onClick={() => onButtonClick(val.name)}
+            onClick={() => onButtonClick(val.action, val)}
           >
-            {val.name === "Madhusmita" || val.name === "Mftffhfgyd"
-              ? "Show Alert"
-              : "Go to Another Page"}
+            {val.action === "alert1" ? "Show Alert" : "Go to Another Page"}
           </button>
         </div>
       ))}
