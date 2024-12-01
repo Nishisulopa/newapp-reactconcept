@@ -22,8 +22,8 @@ function App() {
     <>
       {/* <Navbar /> */}
       {/* <FirstPage /> */}
-      {/* <CardShow /> */}
-      <FaqSection />
+      <CardShow />
+      {/* <FaqSection /> */}
     </>
   );
 }
