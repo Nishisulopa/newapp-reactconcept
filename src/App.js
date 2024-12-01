@@ -6,6 +6,8 @@ import Usememoparent from "./Component/usememo/Usememoparent";
 import FirstPage from "./tailwind-css-page/FirstPage";
 import Navbar from "./tailwind-css-page/Navbar";
 import CardShow from "./tailwind-css-page/CardShow";
+import FaqSection from "./Stateconcept/FaqSection";
+import PasswordHideShow from "./Stateconcept/PasswordHideShow";
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
     <>
       {/* <Navbar /> */}
       {/* <FirstPage /> */}
-      <CardShow />
+      {/* <CardShow /> */}
+      <FaqSection />
     </>
   );
 }
