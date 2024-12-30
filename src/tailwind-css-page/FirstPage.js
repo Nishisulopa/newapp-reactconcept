@@ -1,11 +1,12 @@
 import React from "react";
 import Cards from "./Cards";
 import ProfileCard from "./ProfileCard";
+import Hns from "./header-navabr-sidebar/Hns";
 
 const FirstPage = () => {
   return (
-    <div className="flex mx-auto  flex-col  text-black bg-slate-100">
-      <div className="grid md:grid-cols-2 grid-cols-1">
+    <div className=" mx-auto    text-black bg-slate-100">
+      {/* <div className="grid md:grid-cols-2 grid-cols-1">
         <div className=" py-4 px-4 flex items-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -65,9 +66,23 @@ const FirstPage = () => {
         <Cards />
         <Cards />
         <Cards />
+      </div> */}
+      {/* <div className="grid lg:grid-cols-4 md:grid-cols-3 m-10 gap-5 grid-cols-1"> */}
+      {/* <ProfileCard /> */}
+      {/* </div> */}
+
+      {/* header-navbar-sidebar */}
+
+      {/* <Hns /> */}
+
+      {/* use of height  */}
+      <div class="h-screen bg-gray-300">
+        <div class="h-full bg-green-500">Child matches parent's height.</div>
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 m-10 gap-5 grid-cols-1">
-        <ProfileCard />
+      <div class="bg-gray-300">
+        <div class="min-h-screen bg-blue-500">
+          Child will stretch to at least the screen height.
+        </div>
       </div>
     </div>
   );

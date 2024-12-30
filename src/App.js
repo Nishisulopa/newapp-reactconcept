@@ -19,8 +19,8 @@ function App() {
     // <Usememoparent />
     <>
       {/* <Navbar /> */}
-      {/* <FirstPage /> */}
-      <CardShow />
+      <FirstPage />
+      {/* <CardShow /> */}
     </>
   );
 }
