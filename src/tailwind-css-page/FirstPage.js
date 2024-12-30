@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "./Cards";
 import ProfileCard from "./ProfileCard";
 import Hns from "./header-navabr-sidebar/Hns";
+import Heightdefine from "./heightdefine/Heightdefine";
 
 const FirstPage = () => {
   return (
@@ -67,6 +68,7 @@ const FirstPage = () => {
         <Cards />
         <Cards />
       </div> */}
+
       {/* <div className="grid lg:grid-cols-4 md:grid-cols-3 m-10 gap-5 grid-cols-1"> */}
       {/* <ProfileCard /> */}
       {/* </div> */}
@@ -76,14 +78,8 @@ const FirstPage = () => {
       {/* <Hns /> */}
 
       {/* use of height  */}
-      <div class="h-screen bg-gray-300">
-        <div class="h-full bg-green-500">Child matches parent's height.</div>
-      </div>
-      <div class="bg-gray-300">
-        <div class="min-h-screen bg-blue-500">
-          Child will stretch to at least the screen height.
-        </div>
-      </div>
+
+      {/* <Heightdefine /> */}
     </div>
   );
 };
