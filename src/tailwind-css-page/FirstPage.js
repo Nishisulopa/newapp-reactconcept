@@ -3,10 +3,11 @@ import Cards from "./Cards";
 import ProfileCard from "./ProfileCard";
 import Hns from "./header-navabr-sidebar/Hns";
 import Heightdefine from "./heightdefine/Heightdefine";
+import Containerdiv from "./containerdesign/Containerdiv";
 
 const FirstPage = () => {
   return (
-    <div className=" mx-auto    text-black bg-slate-100">
+    <div className=" mx-auto     text-black bg-slate-100">
       {/* <div className="grid md:grid-cols-2 grid-cols-1">
         <div className=" py-4 px-4 flex items-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -80,6 +81,9 @@ const FirstPage = () => {
       {/* use of height  */}
 
       {/* <Heightdefine /> */}
+
+      {/*Container*/}
+      <Containerdiv />
     </div>
   );
 };
