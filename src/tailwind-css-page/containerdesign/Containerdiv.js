@@ -2,7 +2,7 @@ import React from "react";
 
 const Containerdiv = () => {
   return (
-    <div className="max-w-6xl mx-auto flex justify-center flex-wrap">
+    <div className="max-w-6xl mx-auto flex justify-center flex-wrap  ">
       <div class=" overflow-y-auto  border border-gray-300 p-4 md:h-auto h-[200px] w-1/2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
