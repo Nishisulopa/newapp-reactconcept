@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Lopa from "../../../assets/LOPAA.IO1.png";
+// import Lopa from "../../../assets/LOPAA.IO1.png";
 import { Link } from "react-router-dom";
-import Header from "../navbar/Header.tsx";
+// import Header from "../navbar/Header.tsx";
 
 const ResponsiveNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [hoveredItem, setHoveredItem] = (useState < string) | (null > null);
-  const [selectedItem, setSelectedItem] = (useState < string) | (null > null);
-  const [activeDropdown, setActiveDropdown] =
-    (useState < number) | (null > null);
-  const [activeItem, setActiveItem] = (useState < string) | (null > null);
+  const [hoveredItem, setHoveredItem] = useState();
+  const [selectedItem, setSelectedItem] = useState();
+  const [activeDropdown, setActiveDropdown] = useState();
+  const [activeItem, setActiveItem] = useState();
   const listitem = [
     {
       link: "",
@@ -78,21 +77,19 @@ const ResponsiveNavBar = () => {
 
   return (
     <>
-      <header className="bg-gradient-to-r from-blue-50 to-white  shadow-md ">
-        <Header />
+      <>
+        <p className="text-center h-20">ResponsiveNavBar</p>
+      </>
+      <header className="bg-gradient-to-r sticky top-0 from-blue-50 to-white  shadow-md ">
+        {/* <Header /> */}
+
         {/* <div className=" md:mx-10 mx-0 flex justify-between items-center py-4 px-6 mt-4 "> */}
-        <div
-          className={`flex justify-between items-center py-4 px-8 ${
-            isFixed
-              ? "fixed top-0 mt-0 mx-0 md:pl-20 md:pr-20 w-full z-50 bg-gradient-to-r from-blue-50 to-white shadow-md"
-              : "sticky top-0 sm:mx-10 mx-0"
-          }`}
-        >
+        <div className={`flex justify-between items-center py-4 px-8 `}>
           {/* Logo */}
           <div className="flex justify-center items-center gap-24">
             <div className="flex items-center space-x-2">
               <img
-                src={Lopa}
+                src={""}
                 className="lg:w-48 lg:h-7 w-36 h-4"
                 alt="Matrix AI"
               />
