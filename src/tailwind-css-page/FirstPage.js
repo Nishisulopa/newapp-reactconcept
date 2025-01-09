@@ -5,6 +5,8 @@ import Hns from "./header-navabr-sidebar/Hns";
 import Heightdefine from "./heightdefine/Heightdefine";
 import Containerdiv from "./containerdesign/Containerdiv";
 import ResponsiveNavBar from "./responsivenavbar/ResponsiveNavBar";
+import ResponsivewithCard from "./responsivewithcard/ResponsivewithCard";
+import CardSliding from "./cardsliding/CardSliding";
 
 const FirstPage = () => {
   return (
@@ -76,19 +78,17 @@ const FirstPage = () => {
       {/* </div> */}
 
       {/* header-navbar-sidebar */}
-
       {/* <Hns /> */}
 
       {/* use of height  */}
-
       {/* <Heightdefine /> */}
 
       {/*Container*/}
       {/* <Containerdiv /> */}
 
       {/*Resposive navbar with design*/}
-      <ResponsiveNavBar />
-      <div className="min-h-screen overflow-y-auto">
+      {/* <ResponsiveNavBar /> */}
+      {/* <div className="min-h-screen overflow-y-auto">
         <h1>Nishi</h1>
         <p>Loremklklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
         <p>Loremklklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
@@ -224,7 +224,13 @@ const FirstPage = () => {
         <p>Loremklklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
         <p>Loremklklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
         <p>Loremklklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
-      </div>
+      </div> */}
+
+      {/*Responsive card*/}
+      {/* <ResponsivewithCard /> */}
+
+      {/*CardSliding*/}
+      <CardSliding />
     </div>
   );
 };
