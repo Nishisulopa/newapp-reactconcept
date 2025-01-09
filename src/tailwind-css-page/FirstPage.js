@@ -227,10 +227,10 @@ const FirstPage = () => {
       </div> */}
 
       {/*Responsive card*/}
-      {/* <ResponsivewithCard /> */}
+      <ResponsivewithCard />
 
       {/*CardSliding*/}
-      <CardSliding />
+      {/* <CardSliding /> */}
     </div>
   );
 };
