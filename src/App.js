@@ -32,7 +32,7 @@ function App() {
       {/* <Navbar /> */}
 
       {/* First page is allrounder page  */}
-      {/* <FirstPage /> */}
+      <FirstPage />
 
       {/* <CardShow /> */}
 
@@ -42,7 +42,7 @@ function App() {
       {/*TodoApp*/}
       {/* <TodoApp /> */}
       {/*DeepSeek Landing Page*/}
-      <DsLandingPage />
+      {/* <DsLandingPage /> */}
     </>
   );
 }
