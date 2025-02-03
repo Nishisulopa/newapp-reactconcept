@@ -17,6 +17,7 @@ import Contact from "./tailwind-css-page/dynamiclayout/contact/Contact";
 import DashboardLayoutRoutes from "./tailwind-css-page/dynamiclayout/DashboardLayoutRoutes";
 import TodoApp from "./tailwind-css-page/todo/TodoApp";
 import DsLandingPage from "./tailwind-css-page/landing-page-by-deepseek/DsLandingPage";
+import Otp from "./tailwind-css-page/otp/Otp";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       {/* <Navbar /> */}
 
       {/* First page is allrounder page  */}
-      <FirstPage />
+      {/* <FirstPage /> */}
 
       {/* <CardShow /> */}
 
@@ -43,6 +44,9 @@ function App() {
       {/* <TodoApp /> */}
       {/*DeepSeek Landing Page*/}
       {/* <DsLandingPage /> */}
+
+      {/*OTP page*/}
+      <Otp />
     </>
   );
 }
