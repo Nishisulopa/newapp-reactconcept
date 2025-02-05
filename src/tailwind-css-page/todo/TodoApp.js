@@ -42,11 +42,12 @@ const TodoApp = () => {
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
-
   // Search ToDos
   const filteredTodos = todos.filter((todo) =>
     todo.title.toLowerCase().includes(search.toLowerCase())
   );
+
+  console.log(filteredTodos);
 
   return (
     <div style={{ padding: "20px", maxWidth: "500px", margin: "auto" }}>

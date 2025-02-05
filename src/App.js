@@ -18,6 +18,8 @@ import DashboardLayoutRoutes from "./tailwind-css-page/dynamiclayout/DashboardLa
 import TodoApp from "./tailwind-css-page/todo/TodoApp";
 import DsLandingPage from "./tailwind-css-page/landing-page-by-deepseek/DsLandingPage";
 import Otp from "./tailwind-css-page/otp/Otp";
+import PaginatedAPI from "./tailwind-css-page/pagination/PaginatedAPI";
+import PaginatedList from "./tailwind-css-page/pagination/PaginatedList";
 
 function App() {
   return (
@@ -46,7 +48,11 @@ function App() {
       {/* <DsLandingPage /> */}
 
       {/*OTP page*/}
-      <Otp />
+      {/* <Otp /> */}
+      {/*Pagination with API*/}
+      <PaginatedAPI />
+      {/*Pagination with UI List*/}
+      {/* <PaginatedList /> */}
     </>
   );
 }
