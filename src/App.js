@@ -21,6 +21,7 @@ import Otp from "./tailwind-css-page/otp/Otp";
 import PaginatedAPI from "./tailwind-css-page/pagination/PaginatedAPI";
 import PaginatedList from "./tailwind-css-page/pagination/PaginatedList";
 import DashBoardNavSide from "./tailwind-css-page/responsive-layout-claude/DashBoardNavSide";
+import CardselectPagination from "./cards/CardselectPagination";
 function App() {
   return (
     // <Router>
@@ -42,7 +43,7 @@ function App() {
       {/* DynamicLayout  */}
       {/* <DashboardLayoutRoutes /> */}
       {/*Responsive Layout using claude*/}
-      <DashBoardNavSide />
+      {/* <DashBoardNavSide /> */}
       {/*TodoApp*/}
       {/* <TodoApp /> */}
       {/*DeepSeek Landing Page*/}
@@ -54,6 +55,9 @@ function App() {
       {/* <PaginatedAPI /> */}
       {/*Pagination with UI List*/}
       {/* <PaginatedList /> */}
+
+      {/*CardselectPagination*/}
+      <CardselectPagination />
     </>
   );
 }
