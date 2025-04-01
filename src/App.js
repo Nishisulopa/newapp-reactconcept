@@ -22,6 +22,7 @@ import PaginatedAPI from "./tailwind-css-page/pagination/PaginatedAPI";
 import PaginatedList from "./tailwind-css-page/pagination/PaginatedList";
 import DashBoardNavSide from "./tailwind-css-page/responsive-layout-claude/DashBoardNavSide";
 import CardselectPagination from "./cards/CardselectPagination";
+import InfinityScrollingCard from "./cards/InfinityScrollingCard";
 function App() {
   return (
     // <Router>
@@ -57,7 +58,10 @@ function App() {
       {/* <PaginatedList /> */}
 
       {/*CardselectPagination*/}
-      <CardselectPagination />
+      {/* <CardselectPagination /> */}
+
+      {/* Infinity scrolling card with API call */}
+      <InfinityScrollingCard />
     </>
   );
 }
