@@ -24,6 +24,8 @@ import DashBoardNavSide from "./tailwind-css-page/responsive-layout-claude/DashB
 import CardselectPagination from "./cards/CardselectPagination";
 import InfinityScrollingCard from "./cards/InfinityScrollingCard";
 import ObjectsArray from "./object-array/ObjectsArray";
+import CheckBox from "./object-array/CheckBox";
+import RadioButton from "./object-array/RadioButton";
 function App() {
   return (
     // <Router>
@@ -65,7 +67,9 @@ function App() {
       {/* <InfinityScrollingCard /> */}
 
       {/*Object operation*/}
-      <ObjectsArray />
+      {/* <ObjectsArray /> */}
+      {/* <CheckBox /> */}
+      <RadioButton />
     </>
   );
 }
