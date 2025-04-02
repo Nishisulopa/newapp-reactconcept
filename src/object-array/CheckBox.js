@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 
 const GenderSelection = () => {
-  const [selectedGenders, setSelectedGenders] = useState([]);
+  const [selectedSkills, setSelectedSkills] = useState([]);
+  const [selectedSkillsObject, setSelectedSkillsObject] = useState({});
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
-
-    setSelectedGenders((prevSelected) => {
+    // setSelectedSkillsObject((prev) => {
+    //   return { ...prev, [name]: checked };
+    // });
+    setSelectedSkills((prevSelected) => {
       if (checked) {
         // Add gender to the array if checked
         return [...prevSelected, name];
@@ -16,7 +19,7 @@ const GenderSelection = () => {
       }
     });
   };
-
+  //   console.log("selecteSkillsObject", selectedSkillsObject);
   return (
     <div>
       <h3>Select Gender:</h3>
@@ -24,33 +27,33 @@ const GenderSelection = () => {
         <input
           type="checkbox"
           name="Mongoose"
-          checked={selectedGenders.includes("Male")}
+          checked={selectedSkills.includes("Mongoose")}
           onChange={handleCheckboxChange}
         />
-        Male
+        Mongoose
       </label>
 
       <label>
         <input
           type="checkbox"
           name="Nodejs"
-          checked={selectedGenders.includes("Female")}
+          checked={selectedSkills.includes("Nodejs")}
           onChange={handleCheckboxChange}
         />
-        Female
+        Nodejs
       </label>
 
       <label>
         <input
           type="checkbox"
           name="React"
-          checked={selectedGenders.includes("Others")}
+          checked={selectedSkills.includes("React")}
           onChange={handleCheckboxChange}
         />
-        Others
+        React
       </label>
 
-      <h4>Selected Genders: {selectedGenders.join(", ") || "None"}</h4>
+      <h4>Selected Genders: {selectedSkills.join(", ") || "None"}</h4>
     </div>
   );
 };

@@ -68,8 +68,8 @@ function App() {
 
       {/*Object operation*/}
       {/* <ObjectsArray /> */}
-      {/* <CheckBox /> */}
-      <RadioButton />
+      <CheckBox />
+      {/* <RadioButton /> */}
     </>
   );
 }
