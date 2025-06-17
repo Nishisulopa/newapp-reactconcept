@@ -26,6 +26,9 @@ import InfinityScrollingCard from "./cards/InfinityScrollingCard";
 import ObjectsArray from "./object-array/ObjectsArray";
 import CheckBox from "./object-array/CheckBox";
 import RadioButton from "./object-array/RadioButton";
+import PaginatedAPI_Checkbox from "./tailwind-css-page/pagination/PaginatedAPI_Checkbox";
+import Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Drag_Drop_Card";
+import Kanban_Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Kanban_Drag_Drop_Card";
 function App() {
   return (
     // <Router>
@@ -59,6 +62,8 @@ function App() {
       {/* <PaginatedAPI /> */}
       {/*Pagination with UI List*/}
       {/* <PaginatedList /> */}
+      {/*Pagination with check box*/}
+      {/* <PaginatedAPI_Checkbox /> */}
 
       {/*CardselectPagination*/}
       {/* <CardselectPagination /> */}
@@ -68,8 +73,12 @@ function App() {
 
       {/*Object operation*/}
       {/* <ObjectsArray /> */}
-      <CheckBox />
+      {/* <CheckBox /> */}
       {/* <RadioButton /> */}
+
+      {/*Drag Drop Card  // Kanban_Drag_drop_Card*/}
+      <Drag_Drop_Card />
+      {/* <Kanban_Drag_Drop_Card /> */}
     </>
   );
 }
