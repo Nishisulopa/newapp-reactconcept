@@ -29,6 +29,7 @@ import RadioButton from "./object-array/RadioButton";
 import PaginatedAPI_Checkbox from "./tailwind-css-page/pagination/PaginatedAPI_Checkbox";
 import Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Drag_Drop_Card";
 import Kanban_Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Kanban_Drag_Drop_Card";
+import DemoTodo from "./tailwind-css-page/todo/DemoTodo";
 function App() {
   return (
     // <Router>
@@ -53,6 +54,8 @@ function App() {
       {/* <DashBoardNavSide /> */}
       {/*TodoApp*/}
       {/* <TodoApp /> */}
+      <DemoTodo />
+
       {/*DeepSeek Landing Page*/}
       {/* <DsLandingPage /> */}
 
@@ -77,7 +80,7 @@ function App() {
       {/* <RadioButton /> */}
 
       {/*Drag Drop Card  // Kanban_Drag_drop_Card*/}
-      <Drag_Drop_Card />
+      {/* <Drag_Drop_Card /> */}
       {/* <Kanban_Drag_Drop_Card /> */}
     </>
   );
