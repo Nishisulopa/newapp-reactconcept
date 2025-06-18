@@ -30,6 +30,7 @@ import PaginatedAPI_Checkbox from "./tailwind-css-page/pagination/PaginatedAPI_C
 import Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Drag_Drop_Card";
 import Kanban_Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Kanban_Drag_Drop_Card";
 import DemoTodo from "./tailwind-css-page/todo/DemoTodo";
+import DynamicPaginated_Elips from "./tailwind-css-page/pagination/DynamicPaginated_Elips";
 function App() {
   return (
     // <Router>
@@ -54,7 +55,7 @@ function App() {
       {/* <DashBoardNavSide /> */}
       {/*TodoApp*/}
       {/* <TodoApp /> */}
-      <DemoTodo />
+      {/* <DemoTodo /> */}
 
       {/*DeepSeek Landing Page*/}
       {/* <DsLandingPage /> */}
@@ -67,6 +68,8 @@ function App() {
       {/* <PaginatedList /> */}
       {/*Pagination with check box*/}
       {/* <PaginatedAPI_Checkbox /> */}
+      {/*dynamic Pagination*/}
+      <DynamicPaginated_Elips />
 
       {/*CardselectPagination*/}
       {/* <CardselectPagination /> */}
