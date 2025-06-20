@@ -32,6 +32,7 @@ import Kanban_Drag_Drop_Card from "./tailwind-css-page/drag-drop-card/Kanban_Dra
 import DemoTodo from "./tailwind-css-page/todo/DemoTodo";
 import DynamicPaginated_Elips from "./tailwind-css-page/pagination/DynamicPaginated_Elips";
 import Product_List_Card from "./tailwind-css-page/product-list/Product_List_Card";
+import PdfDownload from "./tailwind-css-page/pdfdownload/PdfDownload";
 function App() {
   return (
     // <Router>
@@ -88,7 +89,10 @@ function App() {
       {/* <Kanban_Drag_Drop_Card /> */}
 
       {/* Product List card */}
-      <Product_List_Card />
+      {/* <Product_List_Card /> */}
+
+      {/* Pdf Download */}
+      <PdfDownload />
     </>
   );
 }
